@@ -26,7 +26,7 @@ const HeroSection= () => {
             1000,
             'a Full Stack Software Developer',
             1000,
-            'Interested in AI/ML',
+            'Interested in AI and ML',
             1000,
       ]}
       wrapper="span"
