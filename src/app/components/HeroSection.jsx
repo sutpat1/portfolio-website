@@ -36,7 +36,6 @@ const HeroSection= () => {
                  </h1>
                 
                 <p className="text-[#ADB7BE] text-base text-lg mb-6 lg:text-xl ">
-                    I am a recent graduate from the University of Texas at Dallas.
                 </p>
                 <div className="mt-6">
                     <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-dark-blue-500 via-indigo-500 to-pink-500 hover:bg-slate-200 text-white border border-white mt-3">
