@@ -61,7 +61,7 @@ const AboutSection = () => {
         <section className="text-white min-h-screen flex items-center">
             <div className="py-8 px-4 sm:py-16 xl:px-16 w-full">
                 {/* Combined container with border */}
-                <div className="border-2 border-gray-600 rounded-lg p-6 bg-gray-800 shadow-lg">
+                <div className="border-2 border-gray-600 rounded-lg p-6 bg-gray-900 shadow-lg">
                     <div className="md:grid md:grid-cols-2 gap-8 items-center xl:gap-16">
                         {/* Image Section */}
                         <div className="flex items-center justify-center">
