@@ -42,7 +42,7 @@ export const EmailSection = () => {
     <section id="contact" 
     className="my-12 md:my-12 py-24 relative">
       <div className="border-2 border-gray-600 rounded-lg p-6 bg-gray-900 shadow-lg">
-        <div className="absolute top-5/8 left-0 -translate-x-1/2 translate-y-0">
+        <div className="absolute top-3/4 left-0 -translate-x-1/2 translate-y-0">
           <div className="bg-rose-600 opacity-70 h-72 w-72 rounded-full blur-3xl"></div>
         </div>
         
