@@ -8,12 +8,12 @@ import EmailSection from "./EmailSection";
 
 const HeroSection= () => {
     return (
-        <section> 
+        <section className="lg:py-16"> 
 
         <div className = "grid grid-cols-1 lg:grid-cols-12">
+            
             <div className="col-span-7 place-self-center text-center sm:text-left">
-                <h1 className="text-white mb-4 text-4xl lg:text-6xl
-                font-extrabold"> 
+                <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold"> 
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">Hello, I am {""}
                 </span>
                 <br></br>
@@ -22,11 +22,11 @@ const HeroSection= () => {
             // Same substring at the start will only be typed out once, initially
             'Sharv Utpat',
             1000, // wait 1s before replacing "Mice" with "Hamsters"
-            'a Graduate from UT Dallas',
+            'UT Dallas Graduate',
             1000,
-            'a Full Stack Software Developer',
+            'Software Engineer',
             1000,
-            'Interested in AI and ML',
+            'AI/ML Enthusiast',
             1000,
       ]}
       wrapper="span"
@@ -56,8 +56,8 @@ const HeroSection= () => {
                 src="/images/SharvWhiteBackground.png" 
                 alt="hero image" 
                 className="rounded-full"
-                width={300} 
-                height={300} // Required for Next.js Image component
+                width={375} 
+                height={375} // Required for Next.js Image component
                 />
                 </div>
             </div>
