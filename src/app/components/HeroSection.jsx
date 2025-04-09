@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-
 import { TypeAnimation } from 'react-type-animation';
+import EmailSection from "./EmailSection";
 
 
 
@@ -38,7 +38,9 @@ const HeroSection= () => {
                 <p className="text-[#ADB7BE] text-base text-lg mb-6 lg:text-xl ">
                 </p>
                 <div className="mt-6">
-                    <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 hover:bg-slate-200 text-white border border-white mt-3">
+                    <button 
+                     //onClick={() => <EmailSection/>}
+                    className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 hover:bg-slate-200 text-white border border-white mt-3">
                         Hire Me
                     </button>
                     <button  
