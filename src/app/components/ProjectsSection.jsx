@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
+import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
@@ -25,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "Growin' Buds Application",
-    description: "I collaborated with a team of four developers to design and implement the user interface for a gardening application. Using JavaScript and React Native, we built a dynamic, cross-platform mobile app that ensured a responsive and intuitive user experience. My focus was on frontend development, UI/UX design, and ensuring seamless integration across devices. We also uploaded the app to Expo, enabling easy deployment, testing, and distribution for both iOS and Android platforms.",
+    description: "I collaborated with a team of four developers to design and implement the user interface for a social media application for gardening. Using JavaScript and React Native, we built a dynamic, cross-platform mobile app that ensured a responsive and intuitive user experience. My focus was on frontend development, UI/UX design, and ensuring seamless integration across devices. We also uploaded the app to Expo, enabling easy deployment, testing, and distribution for both iOS and Android platforms.",
     image: "/images/Plant.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/sutpat1/Growin-Buds",
@@ -45,6 +46,8 @@ const projectsData = [
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -53,6 +56,11 @@ const ProjectsSection = () => {
 const filteredProjects = projectsData.filter((project) => 
   project.tag.includes(tag)
 );
+
+const cardVariants = {
+  initial: { y: 50, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+};
 
   return (
     <section id="projects">
@@ -76,19 +84,26 @@ const filteredProjects = projectsData.filter((project) =>
     </div>
 
 
-    <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-    {filteredProjects.map((project) => (
-    <ProjectCard 
-      key={project.id} 
-      title={project.title} 
-      description={project.description} 
-      imgUrl={project.image} 
-      tags={project.tag}
-      gitUrl={project.gitUrl}
-      previewUrl={project.previewUrl}
-      />
-    ))}
-    </div>
+    <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+        {filteredProjects.map((project, index) => (
+          <motion.li
+            key={index}
+            variants={cardVariants}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            transition={{ duration: 0.3, delay: index * 0.4 }}
+          >
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              imgUrl={project.image}
+              gitUrl={project.gitUrl}
+              previewUrl={project.previewUrl}
+            />
+          </motion.li>
+        ))}
+      </ul>
     </section>
   )
 }
