@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
-import EmailSection from "./EmailSection";
+import Link from "next/link";
 
 
 
@@ -38,11 +38,11 @@ const HeroSection= () => {
                 <p className="text-[#ADB7BE] text-base text-lg mb-6 lg:text-xl ">
                 </p>
                 <div className="mt-6">
-                    <button 
-                     //onClick={() => <EmailSection/>}
-                    className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 hover:bg-slate-200 text-white border border-white mt-3">
+                    <Link
+                    href="/#contact"
+                    className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 hover:bg-slate-200 text-white ">
                         Hire Me
-                    </button>
+                    </Link>
                     <button  
                      onClick={() => window.open("/documents/March2025CVSharvUtpat.pdf", "_blank")}
                     className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 via-yellow-500 to-red-500 hover:bg-slate-800 text-white  mt-3">
