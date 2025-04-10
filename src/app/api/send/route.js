@@ -1,5 +1,11 @@
+// At the top of src/app/api/send/route.js, add:
+console.log("API KEY:", process.env.RESEND_API_KEY);
+console.log("FROM EMAIL:", process.env.FROM_EMAIL);
+
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
+
+
 
 // Load API key from environment variable
 const apiKey = process.env.RESEND_API_KEY;

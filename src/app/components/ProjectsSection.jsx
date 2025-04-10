@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "Portfolio Website",
-    description: "For this project, I used React, Next.js, JavaScript, and Tailwind CSS to build a personal portfolio website. By leveraging React for dynamic content rendering and Next.js for server-side rendering and optimization, I created a fast, responsive, and SEO-friendly website. I focused on building a clean, user-friendly interface with Tailwind CSS to enhance styling and responsiveness, ensuring seamless navigation and a polished user experience.",
+    description: "For this project, I used React, Next.js, JavaScript, and Tailwind CSS to build a responsive, SEO-friendly portfolio website. I leveraged React for dynamic content rendering and Next.js for optimized server-side rendering. The design features a clean, user-friendly interface styled with Tailwind CSS. I also implemented a functional contact form using the Resend email API with secure environment variables for API key management, demonstrating both third-party API integration and security best practices.",
     image: "/images/SquareBinder.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/sutpat1/my-portfolio",
