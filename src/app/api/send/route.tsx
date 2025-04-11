@@ -24,7 +24,7 @@ try {
   console.error("Error initializing Resend:", err);
 }
 
-export async function POST(req) {
+export async function POST(req: NextResponse) {
   try {
     // Check if Resend was properly initialized
     if (!resend) {
@@ -48,7 +48,7 @@ export async function POST(req) {
     const { data, error } = await resend.emails.send({
       from: `Sharv's Portfolio <${fromEmail}>`,
       to: ["sutpat1@gmail.com"],
-      reply_to: email,
+      replyTo: email,
       subject: `Portfolio Contact: ${subject}`,
       react: (
         <>
@@ -67,7 +67,9 @@ export async function POST(req) {
 
     return NextResponse.json({ success: true, data });
   } catch (error) {
-    console.error("Error in email API:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    if (error instanceof Error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+    return NextResponse.json({ error: 'Unknown error occurred' }, { status: 500 });
   }
 }
