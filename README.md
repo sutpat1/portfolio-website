@@ -112,30 +112,30 @@ Create a .env.local file in the root directory and add:
 
 **Hero Section**
 
-Type animation for dynamic text
-Download CV button
-Contact button
-Animated entrance effects
+* Type animation for dynamic text
+* Download CV button
+* Contact button
+* Animated entrance effects
 
 **About Section**
 
-Tabbed interface for Skills, Education, and Certifications
-Clean, bordered container design
-Responsive image and text layout
+* Tabbed interface for Skills, Education, and Certifications
+* Clean, bordered container design
+* Responsive image and text layout
 
 **Projects Section**
 
-Filterable project categories
-Project cards with hover effects
-GitHub and live preview links
-Animated entrance of cards when scrolling
+* Filterable project categories
+* Project cards with hover effects
+* GitHub and live preview links
+* Animated entrance of cards when scrolling
 
 **Contact Section**
 
-Functional contact form
-Email validation
-Success notification
-Social media links
+* Functional contact form
+* Email validation
+* Success notification
+* Social media links
 
 ---
 
@@ -143,11 +143,11 @@ Social media links
 
 To use this portfolio template for your own projects:
 
-Update personal information in components
-Replace images in the /public/images/ directory
-Update project data in ProjectsSection.jsx
-Modify the skills and other information in AboutSection.jsx
-Set up your own Resend API account and update environment variables
+* Update personal information in components
+* Replace images in the /public/images/ directory
+* Update project data in ProjectsSection.jsx
+* Modify the skills and other information in AboutSection.jsx
+* Set up your own Resend API account and update environment variables
 
 ---
 
