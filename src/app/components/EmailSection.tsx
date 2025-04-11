@@ -58,10 +58,10 @@ const EmailSection: React.FC = () => {
             </p>
             <div className="socials flex flex-row gap-2">
               <Link href="https://github.com/sutpat1" target="_blank">
-                <Image src="/github-icon.svg" alt="Github Icon" width={24} height={24} />
+                <Image src="/github-icon.svg" alt="Github Icon" width={48} height={48} />
               </Link>
               <Link href="https://linkedin.com/in/sharvutpat/" target="_blank">
-                <Image src="/linkedin-icon.svg" alt="Linkedin Icon" width={24} height={24} />
+                <Image src="/linkedin-icon.svg" alt="Linkedin Icon" width={48} height={48} />
               </Link>
             </div>
           </div>
