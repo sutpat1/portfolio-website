@@ -28,26 +28,25 @@ A responsive, SEO-friendly portfolio website built using **React**, **Next.js**,
 ---
 
 ## 📁 Folder Structure 
-<pre lang="markdown"> src/
+<pre lang="markdown">src/
   ├── app/
   │   ├── api/
   │   │   └── send/
-  │   │       └── route.js        # Email API endpoint
+  │   │       └── route.tsx       # Email API endpoint
   │   ├── components/             # UI components
-  │   │   ├── AboutSection.jsx    # About section with tabs
-  │   │   ├── EmailSection.jsx    # Contact form
-  │   │   ├── HeroSection.jsx     # Hero section with animations
-  │   │   ├── NavBar.jsx          # Navigation
-  │   │   ├── ProjectsSection.jsx # Projects showcase
+  │   │   ├── AboutSection.tsx    # About section with tabs
+  │   │   ├── EmailSection.tsx    # Contact form
+  │   │   ├── HeroSection.tsx     # Hero section with animations
+  │   │   ├── NavBar.tsx          # Navigation
+  │   │   ├── ProjectsSection.tsx # Projects showcase
   │   │   └── ...                 # Other components
   │   ├── globals.css             # Global styles
-  │   ├── layout.js               # Root layout
-  │   └── page.js                 # Home page
+  │   ├── layout.tsx               # Root layout
+  │   └── page.tsx                 # Home page
   └── ...
   public/
   ├── images/                     # Image assets
-  └── documents/                  # PDFs and other documents
- </pre>
+  └── documents/                  # PDFs and other documents</pre>
  ---
  
  ## 🚀 Getting Started
