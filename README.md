@@ -106,9 +106,9 @@ Create a .env.local file in the root directory and add:
 
 **Dynamic Navigation**
 
-Smooth scrolling to sections
-Mobile-responsive menu
-Fixed navigation bar
+* Smooth scrolling to sections
+* Mobile-responsive menu
+* Fixed navigation bar
 
 **Hero Section**
 
