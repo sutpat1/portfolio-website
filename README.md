@@ -28,9 +28,7 @@ A responsive, SEO-friendly portfolio website built using **React**, **Next.js**,
 ---
 
 ## 📁 Folder Structure
-
 <pre lang="markdown"> 
-
  src/
  ├── app/
  │   ├── api/
@@ -50,7 +48,6 @@ A responsive, SEO-friendly portfolio website built using **React**, **Next.js**,
  public/
  ├── images/                     # Image assets
  └── documents/                  # PDFs and other documents
-
 </pre>
 
 ---
