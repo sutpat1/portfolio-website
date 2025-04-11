@@ -51,7 +51,7 @@ export const EmailSection = () => {
             <h5 className="text-4xl font-bold text-white my-2">
               Let's Connect!
             </h5>
-            <p className="text-whit mb-4 max-w-md">
+            <p className="text-white mb-4 max-w-md">
               I am currently searching for any new career opportunities related to Full Stack Software Engineering or AI/ML. My inbox is always open.
               Whether you have any questions regarding my work or just want to say hello, I will do my best to respond to you as soon as I can!
             </p>
