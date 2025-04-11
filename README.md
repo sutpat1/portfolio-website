@@ -91,8 +91,8 @@ Create a .env.local file in the root directory and add:
    ```bash
    npm run dev
    ```
-
-**or**
+   
+   **or**
 
    ```bash
    yarn dev
@@ -137,7 +137,10 @@ Email validation
 Success notification
 Social media links
 
-**🔧 Customization**
+---
+
+## 🔧 Customization
+
 To use this portfolio template for your own projects:
 
 Update personal information in components
