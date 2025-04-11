@@ -13,7 +13,7 @@ const apiKey = process.env.RESEND_API_KEY;
 const fromEmail = process.env.FROM_EMAIL || 'onboarding@resend.dev';
 
 // Initialize Resend with error handling
-let resend;
+let resend: Resend | undefined;
 try {
   if (!apiKey) {
     console.error("RESEND_API_KEY environment variable is not set!");
