@@ -58,30 +58,31 @@ Node.js (v14.0.0 or later)
 npm or yarn
 
 **Installation**
-Clone the repository
+
+1. Clone the repository
 
 bashgit clone https://github.com/sutpat1/my-portfolio.git
 cd my-portfolio
 
-Install dependencies
+2. Install dependencies
 
 bashnpm install
 **or**
 yarn install
 
-Set up environment variables
+3. Set up environment variables
 Create a .env.local file in the root directory and add:
 
 RESEND_API_KEY=your_resend_api_key
 FROM_EMAIL=your_email@example.com
 
-Run the development server
+4. Run the development server
 
 bashnpm run dev
 **or**
 yarn dev
 
-Open http://localhost:3000 with your browser to see the result.
+5. Open http://localhost:3000 with your browser to see the result.
 
 ---
 
