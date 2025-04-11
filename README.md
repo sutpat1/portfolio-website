@@ -66,24 +66,28 @@ npm or yarn
    git clone https://github.com/sutpat1/my-portfolio.git
    cd my-portfolio
 
-
 2. Install dependencies
 
-bashnpm install
+   ```bash
+   npm install
 **or**
-yarn install
+   ```bash
+   yarn install
 
 3. Set up environment variables
 Create a .env.local file in the root directory and add:
 
-RESEND_API_KEY=your_resend_api_key
-FROM_EMAIL=your_email@example.com
+   ```bash
+   RESEND_API_KEY=your_resend_api_key
+   FROM_EMAIL=your_email@example.com
 
 4. Run the development server
 
-bashnpm run dev
+   ```bash
+   npm run dev
 **or**
-yarn dev
+   ```bash
+   yarn dev
 
 5. Open http://localhost:3000 with your browser to see the result.
 
