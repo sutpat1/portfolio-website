@@ -4,7 +4,7 @@ A responsive, SEO-friendly portfolio website built using **React**, **Next.js**,
 
 ## 🌐 Live Demo
 
-[Visit the Portfolio](#) <!-- https://sharvutpat.com/ -->
+[Visit the Portfolio](https://sharvutpat.com/) 
 
 ---
 
