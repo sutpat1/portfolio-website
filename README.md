@@ -59,12 +59,13 @@ npm or yarn
 
 ## Installation
 
+
 1. Clone the repository
 
+   ```bash
+   git clone https://github.com/sutpat1/my-portfolio.git
+   cd my-portfolio
 
-
-git clone https://github.com/sutpat1/my-portfolio.git
-cd my-portfolio
 
 2. Install dependencies
 
