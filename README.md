@@ -70,11 +70,13 @@ npm or yarn
 
    ```bash
    npm install
+   ```
    
    **or**
 
    ```bash
    yarn install
+   ```
 
 3. Set up environment variables
 Create a .env.local file in the root directory and add:
@@ -82,16 +84,19 @@ Create a .env.local file in the root directory and add:
    ```bash
    RESEND_API_KEY=your_resend_api_key
    FROM_EMAIL=your_email@example.com
+   ```
 
 4. Run the development server
 
    ```bash
    npm run dev
+   ```
 
 **or**
 
    ```bash
    yarn dev
+   ```
 
 5. Open http://localhost:3000 with your browser to see the result.
 
