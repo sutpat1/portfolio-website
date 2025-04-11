@@ -48,7 +48,7 @@ const EmailSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-4">
           {/* Left Section */}
           <div className="z-10">
-            <h5 className="text-4xl font-bold text-white my-2">Let's Connect!</h5>
+            <h5 className="text-4xl font-bold text-white my-2">Let&apos;s Connect!</h5>
             <p className="text-white mb-4 max-w-md">
               I am currently searching for any new career opportunities related
               to Full Stack Software Engineering or AI/ML. My inbox is always
@@ -113,7 +113,7 @@ const EmailSection: React.FC = () => {
                   id="message"
                   required
                   className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                  placeholder="Let's talk about..."
+                  placeholder="Let&apos;s talk about..."
                 />
               </div>
               <button
