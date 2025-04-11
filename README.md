@@ -49,6 +49,8 @@ public/
 ├── images/                     # Image assets
 └── documents/                  # PDFs and other documents
 
+---
+
 ## 🚀 Getting Started
 
 **Prerequisites**
@@ -64,7 +66,7 @@ cd my-portfolio
 Install dependencies
 
 bashnpm install
-# or
+**or**
 yarn install
 
 Set up environment variables
@@ -76,10 +78,12 @@ FROM_EMAIL=your_email@example.com
 Run the development server
 
 bashnpm run dev
-# or
+**or**
 yarn dev
 
 Open http://localhost:3000 with your browser to see the result.
+
+---
 
 ## 📱 Features Breakdown
 
@@ -125,9 +129,13 @@ Update project data in ProjectsSection.jsx
 Modify the skills and other information in AboutSection.jsx
 Set up your own Resend API account and update environment variables
 
+---
+
 ## 📄 License
 
 This project is open source and available under the MIT License.
+
+---
 
 ## 🤝 Acknowledgements
 
