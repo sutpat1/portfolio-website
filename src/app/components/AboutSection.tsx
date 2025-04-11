@@ -17,6 +17,7 @@ const TAB_DATA: TabData[] = [
             <ul className="list-disc pl-5">
                 <li>Java</li>
                 <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>C++</li>
                 <li>Python</li>
                 <li>React.js</li>
