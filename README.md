@@ -54,8 +54,9 @@ public/
 ## 🚀 Getting Started
 
 **Prerequisites**
-Node.js (v14.0.0 or later)
-npm or yarn
+
+* Node.js (v14.0.0 or later)
+* npm or yarn
 
 ## Installation
 
