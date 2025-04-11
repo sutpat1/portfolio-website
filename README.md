@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A responsive, SEO-friendly portfolio website built using **React**, **Next.js**, **JavaScript**, and **Tailwind CSS** to showcase personal projects, skills, and contact information.
+A responsive, SEO-friendly portfolio website built using **React**, **Next.js**, **TypeScript**, and **Tailwind CSS** to showcase personal projects, skills, and contact information.
 
 ## 🌐 Live Demo
 
@@ -21,15 +21,14 @@ A responsive, SEO-friendly portfolio website built using **React**, **Next.js**,
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, JavaScript, Tailwind CSS
+- **Frontend**: React, TypeScript, Tailwind CSS
 - **Framework**: Next.js
 - **Email Service**: Resend Email API
 
 ---
 
-## 📁 Folder Structure
-<pre lang="markdown"> 
-  src/
+## 📁 Folder Structure 
+<pre lang="markdown"> src/
   ├── app/
   │   ├── api/
   │   │   └── send/
