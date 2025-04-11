@@ -70,7 +70,9 @@ npm or yarn
 
    ```bash
    npm install
+   
 **or**
+
    ```bash
    yarn install
 
@@ -85,6 +87,7 @@ Create a .env.local file in the root directory and add:
 
    ```bash
    npm run dev
+
 **or**
    ```bash
    yarn dev
