@@ -27,9 +27,8 @@ A responsive, SEO-friendly portfolio website built using **React**, **Next.js**,
 
 ---
 
-## 📁 Folder Structure
-<pre lang="markdown"> 
- src/
+## 📁 Folder Structure 
+<pre lang="markdown"> src/
  ├── app/
  │   ├── api/
  │   │   └── send/
