@@ -57,9 +57,11 @@ public/
 Node.js (v14.0.0 or later)
 npm or yarn
 
-**Installation**
+## Installation
 
 1. Clone the repository
+
+
 
 git clone https://github.com/sutpat1/my-portfolio.git
 cd my-portfolio
