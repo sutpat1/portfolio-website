@@ -3,10 +3,9 @@ console.log("API KEY:", process.env.RESEND_API_KEY);
 console.log("FROM EMAIL:", process.env.FROM_EMAIL);
 
 import { NextResponse } from 'next/server';
+import { NextRequest } from 'next/server';
 import React from 'react';
 import { Resend } from 'resend';
-
-
 
 // Load API key from environment variable
 const apiKey = process.env.RESEND_API_KEY;
@@ -24,7 +23,7 @@ try {
   console.error("Error initializing Resend:", err);
 }
 
-export async function POST(req: NextResponse) {
+export async function POST(req: NextRequest) {
   try {
     // Check if Resend was properly initialized
     if (!resend) {

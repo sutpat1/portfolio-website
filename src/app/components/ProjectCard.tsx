@@ -2,7 +2,16 @@ import React from 'react'
 import { CodeBracketIcon, EyeIcon} from "@heroicons/react/24/outline";
 import Link from 'next/link';
 
-const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl}) => {
+interface ProjectCardProps {
+    imgUrl: string;
+    title: string;
+    description: string;
+    gitUrl: string;
+    previewUrl: string;
+}
+
+// Apply the interface to the component's props
+const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl}: ProjectCardProps) => {
   return (
     <div>
         <div 
