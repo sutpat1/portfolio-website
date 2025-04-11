@@ -3,6 +3,7 @@ console.log("API KEY:", process.env.RESEND_API_KEY);
 console.log("FROM EMAIL:", process.env.FROM_EMAIL);
 
 import { NextResponse } from 'next/server';
+import React from 'react';
 import { Resend } from 'resend';
 
 

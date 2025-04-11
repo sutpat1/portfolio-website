@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
+import React from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,12 +13,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Sharv Utpat | Software Engineer",
-  description: "ersonal portfolio website of Sharv Utpat, Full Stack Software Engineer with experience in AI/ML",
+  description:
+    "Personal portfolio website of Sharv Utpat, Full Stack Software Engineer with experience in AI/ML",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body

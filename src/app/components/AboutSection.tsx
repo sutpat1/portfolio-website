@@ -3,7 +3,13 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
-const TAB_DATA = [
+interface TabData {
+    title: string;
+    id: string;
+    content: React.ReactNode;
+}
+
+const TAB_DATA: TabData[] = [
     {
         title: "Skills",
         id: "skills",
@@ -47,11 +53,11 @@ const TAB_DATA = [
     },
 ];
 
-const AboutSection = () => {
-    const [tab, setTab] = useState("skills");
+const AboutSection: React.FC = () => {
+    const [tab, setTab] = useState<string>("skills");
     const [isPending, startTransition] = useTransition();
 
-    const handleTabChange = (id) => {
+    const handleTabChange = (id: string) => {
         startTransition(() => {
             setTab(id);
         });
@@ -60,21 +66,18 @@ const AboutSection = () => {
     return (
         <section className="text-white" id="about">
             <div className="py-8 px-4 sm:py-16 xl:px-16 w-full">
-                {/* Combined container with border */}
                 <div className="border-2 border-blue-600 rounded-lg p-6 bg-blue-950 shadow-lg">
                     <div className="md:grid md:grid-cols-2 gap-8 items-center xl:gap-16">
-                        {/* Image Section */}
                         <div className="flex items-center justify-center">
                             <Image
                                 src="/images/about-image.png"
                                 width={600}
                                 height={600}
                                 alt="Image of Computer"
-                                className="object-cover rounded-md" // Added rounded corners to the image
+                                className="object-cover rounded-md"
                             />
                         </div>
 
-                        {/* About Me Section */}
                         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                             <p className="text-base lg:text-lg">
@@ -88,13 +91,11 @@ const AboutSection = () => {
                         </div>
                     </div>
 
-                    {/* Tab Buttons - Moved outside the grid but still inside the border */}
                     <div className="mt-8 text-lg">
                         <div className="flex flex-row justify-start">
                             <TabButton
                                 selectTab={() => handleTabChange("skills")}
                                 active={tab === "skills"}
-                                
                             >
                                 Skills
                             </TabButton>
@@ -112,8 +113,9 @@ const AboutSection = () => {
                             </TabButton>
                         </div>
 
-                        {/* Tab Content */}
-                        <div className="mt-8 text-lg">{TAB_DATA.find((t) => t.id === tab)?.content}</div>
+                        <div className="mt-8 text-lg">
+                            {TAB_DATA.find((t) => t.id === tab)?.content}
+                        </div>
                     </div>
                 </div>
             </div>
