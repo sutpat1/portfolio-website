@@ -158,6 +158,6 @@ A responsive, SEO-friendly portfolio website built using **React**, **Next.js**,
  
  ## 🤝 Acknowledgements
  
- Next.js team for the amazing framework
- Tailwind CSS for the utility-first CSS
- Resend for the email API service
+ * Next.js team for the amazing framework
+ * Tailwind CSS for the utility-first CSS
+ * Resend for the email API service
