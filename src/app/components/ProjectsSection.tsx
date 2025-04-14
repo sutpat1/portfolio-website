@@ -30,7 +30,7 @@ const projectsData = [
     image: "/images/Plant.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/sutpat1/Growin-Buds",
-    previewUrl: "https://github.com/sutpat1/Growin-Buds",
+    previewUrl: "https://github.com/sutpat1/growin-buds?tab=readme-ov-file#-live-demo",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const projectsData = [
     image: "/images/Connect4.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/sutpat1/Connect4Project",
-    previewUrl: "https://github.com/sutpat1/Connect4Project",
+    previewUrl: "https://github.com/sutpat1/connect-4-project/blob/main/README.md#-getting-started",
   },
 
 ]

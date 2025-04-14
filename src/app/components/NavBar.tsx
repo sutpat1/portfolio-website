@@ -17,6 +17,10 @@ const navLinks: NavItem[] = [
     path: "#about"
   },
   {
+    title: "Experience",
+    path: "#experience"
+  },
+  {
     title: "Projects",
     path: "#projects"
   },
