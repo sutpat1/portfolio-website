@@ -9,7 +9,6 @@ const HeroSection = () => {
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 lg:grid-cols-12">
-
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -18,7 +17,7 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-700 via-purple-400 to-cyan-300">
               Hello, I am{" "}
             </span>
             <br />
@@ -44,13 +43,13 @@ const HeroSection = () => {
           <div className="mt-6">
             <Link
               href="/#contact"
-              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 hover:bg-slate-200 text-white"
+              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br  from-rose-700 via-purple-400 to-cyan-300 hover:bg-slate-200 text-white"
             >
               Hire Me
             </Link>
             <button
               onClick={() => window.open("/documents/April2025CVSharvUtpat.pdf", "_blank")}
-              className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 via-yellow-500 to-red-500 hover:bg-slate-800 text-white mt-3"
+              className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-cyan-300 via-purple-400 to-rose-700 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
@@ -59,19 +58,20 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        {/* Image */}
+        {/* Image with Blue Ring */}
         <div className="col-span-4 flex justify-center items-center mt-10 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative flex justify-center items-center">
-            <Image
-              src="/images/SharvWhiteBackground.png"
-              alt="hero image"
-              className="rounded-full"
-              width={400}
-              height={400}
-            />
+          <div className="rounded-full bg-gradient-to-r from-cyan-300 via-purple-400 to-rose-700 p-4 relative">
+            <div className="rounded-full bg-white overflow-hidden w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
+              <Image
+                src="/images/SharvWhiteBackground.png"
+                alt="hero image"
+                className="rounded-full w-full h-full object-cover"
+                width={400}
+                height={400}
+              />
+            </div>
           </div>
         </div>
-        
       </div>
     </section>
   );
