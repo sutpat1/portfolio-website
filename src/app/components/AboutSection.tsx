@@ -29,8 +29,8 @@ const TAB_DATA: TabData[] = [
     <div className="flex flex-col items-center md:items-start">
       <h2 className="font-bold text-lg md:text-xl mb-1">B.S. in Computer Science, The University of Texas at Dallas</h2>
       <p className="text-gray-400 mb-3">August 2021 - May 2025</p>
-      <ul className="list-none text-center md:text-left">
-        <li className="font-bold mb-1">CS^2 Computing Scholars Honors Program</li>
+      <ul className="list-disc pl-8 text-center md:text-left">
+        <li className="font-bold "> CS^2 Computing Scholars Honors Program</li>
         <li className="font-bold">Collegium V Honors Program</li>
       </ul>
     </div>
