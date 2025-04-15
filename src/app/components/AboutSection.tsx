@@ -14,9 +14,23 @@ const TAB_DATA: TabData[] = [
         title: "Education",
         id: "education",
         content: (
-            <ul className="list-disc pl-5">
-                <li>Bachelor of Science in Computer Science - University of Texas at Dallas</li>
-            </ul>
+            
+            <div>
+                <div className="flex items-center mb-3">
+                    <Image 
+                        src="/images/UTD-logo.png" 
+                        width={96} 
+                        height={96} 
+                        alt="Education Icon"
+                        className="mr-3 rounded-full"
+                    />
+                    <div>
+                        <div className="font-bold text-xl">B.S. in Computer Science, University of Texas at Dallas</div>
+                        <div className="text-gray-400 mb-4">August 2021 - May 2025</div>
+                    </div>
+                </div>
+            </div>
+            
         ),
     },
     {
