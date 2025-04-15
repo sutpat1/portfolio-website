@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "Personal Portfolio Website",
     description: "For this project, I used React, Next.js, TypeScript, and Tailwind CSS to build a responsive, SEO-friendly portfolio website. I leveraged React for dynamic content rendering and Next.js for optimized server-side rendering. The design features a clean, user-friendly interface styled with Tailwind CSS. I also implemented a functional contact form using the Resend email API with secure environment variables for API key management, demonstrating both third-party API integration and security best practices.",
     image: "/images/SquareBinder.png",
     tag: ["All", "Web"],
@@ -63,47 +63,49 @@ const cardVariants = {
 };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 ">
+    <section id="projects" className="my-12 md:my-12 py-24 relative">
+      <h2 className="text-center text-4xl font-bold text-white mb-8">
         My Projects
       </h2>
+      
+      <div className="border-2 border-blue-600 rounded-lg p-6 bg-blue-950 shadow-lg relative">
+        
+        <div className="text-white flex flex-row justify-center items-center gap-2 py-6 z-10 relative font-bold">
+          <ProjectTag onClick={handleTagChange} 
+          name="All"
+          isSelected={tag == "All"}
+          />
+          <ProjectTag onClick={handleTagChange} 
+          name="Web"
+          isSelected={tag == "Web"}
+          />
+          <ProjectTag onClick={handleTagChange} 
+          name="Mobile"
+          isSelected={tag == "Mobile"}
+          />
+        </div>
 
-    <div className="text-white flex flex-row jusitfy-center items-center gap-2 py-6">
-      <ProjectTag onClick={handleTagChange} 
-      name="All"
-      isSelected={tag == "All"}
-      />
-      <ProjectTag onClick={handleTagChange} 
-      name="Web"
-      isSelected={tag == "Web"}
-      />
-      <ProjectTag onClick={handleTagChange} 
-      name="Mobile"
-      isSelected={tag == "Mobile"}
-      />
-    </div>
-
-
-    <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
+        <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 z-10 relative">
+            {filteredProjects.map((project, index) => (
+              <motion.li
+                key={index}
+                variants={cardVariants}
+                initial="initial"
+                animate={isInView ? "animate" : "initial"}
+                transition={{ duration: 0.3, delay: index * 0.4 }}
+              >
+                <ProjectCard
+                  key={project.id}
+                  title={project.title}
+                  description={project.description}
+                  imgUrl={project.image}
+                  gitUrl={project.gitUrl}
+                  previewUrl={project.previewUrl}
+                />
+              </motion.li>
+            ))}
+          </ul>
+      </div>
     </section>
   )
 }

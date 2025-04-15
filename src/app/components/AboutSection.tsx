@@ -15,21 +15,27 @@ const TAB_DATA: TabData[] = [
         id: "education",
         content: (
             
-            <div>
-                <div className="flex items-center mb-3">
-                    <Image 
-                        src="/images/UTD-logo.png" 
-                        width={96} 
-                        height={96} 
-                        alt="Education Icon"
-                        className="mr-3 rounded-full"
-                    />
-                    <div>
-                        <div className="font-bold text-xl">B.S. in Computer Science, University of Texas at Dallas</div>
-                        <div className="text-gray-400 mb-4">August 2021 - May 2025</div>
-                    </div>
-                </div>
-            </div>
+            <div className="w-full px-4 py-3">
+  <div className="flex flex-col md:flex-row items-center text-center md:text-left">
+    <div className="mb-4 md:mb-0 md:mr-4 flex justify-center">
+      <Image
+        src="/images/UTD-logo.png"
+        width={144}
+        height={144}
+        alt="UTD Logo"
+        className="rounded-full border-2 border-gray-300"
+      />
+    </div>
+    <div className="flex flex-col items-center md:items-start">
+      <h2 className="font-bold text-lg md:text-xl mb-1">B.S. in Computer Science, The University of Texas at Dallas</h2>
+      <p className="text-gray-400 mb-3">August 2021 - May 2025</p>
+      <ul className="list-none text-center md:text-left">
+        <li className="font-bold mb-1">CS^2 Computing Scholars Honors Program</li>
+        <li className="font-bold">Collegium V Honors Program</li>
+      </ul>
+    </div>
+  </div>
+</div>
             
         ),
     },
@@ -37,7 +43,8 @@ const TAB_DATA: TabData[] = [
         title: "Skills",
         id: "skills",
         content: (
-            <ul className="list-disc pl-5">
+            <ul className="list-disc pl-5 font-bold">
+                
                 <li>Java</li>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
@@ -45,7 +52,6 @@ const TAB_DATA: TabData[] = [
                 <li>Python</li>
                 <li>React.js</li>
                 <li>Next.js</li>
-                <li>Node.js</li>
                 <li>SQL</li>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -59,11 +65,52 @@ const TAB_DATA: TabData[] = [
         title: "Certifications",
         id: "certifications",
         content: (
-            <ul className="list-disc pl-5">
-                <li>AWS Certified AI Practitioner</li>
-                <li>AWS Certified Cloud Practitioner</li>
-                <li>JPMC Software Engineering Virtual Experience</li>
-                <li>React.js Essential Training</li>
+            <ul className="list-disc pl-5 space-y-2">
+                <li className="flex items-center font-bold">
+                <div className="w-16 h-16 mr-2 rounded-full overflow-hidden relative flex-shrink-0 mb-2 border-1 border-gray-300">
+                    <Image 
+                        src="/images/AWSLogoDark.png" 
+                        alt="AWS Logo"
+                        fill
+                        className="object-cover"
+                    />
+                </div>
+                    AWS Certified AI Practitioner
+                </li>
+                <li className="flex items-center font-bold ">
+                <div className="w-16 h-16 mr-2 rounded-full overflow-hidden relative flex-shrink-0 mb-2 border-1 border-gray-300">
+                    <Image 
+                        src="/images/AWSLogoDark.png" 
+                        alt="AWS Logo"
+                        fill
+                        className="object-cover"
+                    />
+                </div>
+                    AWS Certified Cloud Practitioner
+                </li>
+                <li className="flex flex-row items-center font-bold mb-4">
+  <div className="w-16 h-16 mr-3 rounded-full overflow-hidden relative flex-shrink-0 border border-gray-300">
+    <Image
+      src="/images/JPMCLogo.png"
+      alt="JPMC Logo"
+      fill
+      className="object-contain scale-130 transform"
+    />
+  </div>
+  <span className="self-center">JPMorgan Chase & Co. Software Engineering Virtual Experience</span>
+</li>
+
+                    <li className="flex flex-row items-center font-bold mb-4">
+                        <div className="w-16 h-16 mr-3 rounded-full overflow-hidden relative flex-shrink-0 border border-gray-300">
+                            <Image
+                            src="/images/LinkedInIcon.png"
+                            alt="LinkedIn Logo"
+                            fill
+                            className="object-contain"
+                            />
+                        </div>
+                        <span className="self-center">React.js Essential Training</span>
+                    </li>
             </ul>
         ),
     },
