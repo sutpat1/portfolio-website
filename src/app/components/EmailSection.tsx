@@ -40,6 +40,7 @@ const EmailSection: React.FC = () => {
 
   return (
     <section id="contact" className="my-12 md:my-12 py-24 relative">
+      <h2 className="text-4xl font-bold text-white my-2 text-center mb-8">Let&apos;s Connect!</h2>
       <div className="border-2 border-blue-600 rounded-lg p-6 bg-blue-950 shadow-lg">
         <div className="absolute top-3/4 left-0 -translate-x-1/2 translate-y-0">
           <div className="bg-rose-600 opacity-70 h-72 w-72 rounded-full blur-3xl"></div>
@@ -48,8 +49,7 @@ const EmailSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-4">
           {/* Left Section */}
           <div className="z-10">
-            <h5 className="text-4xl font-bold text-white my-2">Let&apos;s Connect!</h5>
-            <p className="text-white mb-4 max-w-md">
+            <p className="text-white text-xl mb-4 max-w-md">
               I am currently searching for any new career opportunities related
               to Full Stack Software Engineering or AI/ML. My inbox is always
               open. Whether you have any questions regarding my work or just
@@ -58,10 +58,10 @@ const EmailSection: React.FC = () => {
             </p>
             <div className="socials flex flex-row gap-2">
               <Link href="https://github.com/sutpat1" target="_blank">
-                <Image src="/github-icon.svg" alt="Github Icon" width={48} height={48} />
+                <Image src="/github-icon.svg" alt="Github Icon" width={60} height={60} />
               </Link>
               <Link href="https://linkedin.com/in/sharvutpat/" target="_blank">
-                <Image src="/linkedin-icon.svg" alt="Linkedin Icon" width={48} height={48} />
+                <Image src="/linkedin-icon.svg" alt="Linkedin Icon" width={60} height={60} />
               </Link>
             </div>
           </div>

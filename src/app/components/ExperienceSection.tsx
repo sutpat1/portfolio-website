@@ -18,7 +18,7 @@ const EXPERIENCE_DATA: ExperienceItem[] = [
     company: "USAA",
     duration: "May 2024 - August 2024",
     description: [
-      "From May to August 2024, I worked as a Full Stack Software Engineering Intern in the Payments Technology Department at USAA. During my internship, I contributed to enhancing an internal customer service tool that enabled developers and other USAA employees to view and manage members' connected bank accounts. I improved the user interface using React.js and implemented backend REST API calls with Java and Spring Boot. Additionally, I built a search component to retrieve bank account details using member IDs and integrated CI/CD pipelines, OpenShift deployments, and automation tools to support a successful product launch. Outside of my core responsibilities, I also participated in the AWS Game Day Hackathon hosted at the company."
+      "From May to August 2024, I worked as a Full Stack Software Engineering Intern in the Payments Technology Department at USAA. During my internship, I contributed towards enhancing an internal customer service tool that enabled developers and other USAA employees to view and manage members' connected bank accounts. I improved the user interface using React.js and implemented backend REST API calls with Java and Spring Boot. Additionally, I built a search component to retrieve bank account details using member IDs and integrated CI/CD pipelines, OpenShift deployments, and automation tools to support a successful product launch. Outside of my core responsibilities, I also participated in the AWS Game Day Hackathon hosted at the company."
     ],
     skills: ["Java", "React.js", "Spring Boot", "REST APIs", "Javascript", "Git", "CI/CD Pipelines"]
   },
@@ -53,10 +53,10 @@ const ExperienceSection: React.FC = () => {
                     >
                       {/* Add logo for USAA in the button */}
                       {exp.id === "usaa" && (
-                        <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-white mr-3">
-                          <img 
-                            src="/images/USAANoBG.jpg" 
-                            alt="USAA Logo" 
+                        <div className="w-12 h-12 md:w-12 md:h-12 rounded-full overflow-hidden flex items-center justify-center bg-white mr-3" style={{ minWidth: '48px', minHeight: '48px' }}>
+                          <img
+                            src="/images/USAANoBG.jpg"
+                            alt="USAA Logo"
                             width={48}
                             height={48}
                             className="object-contain"
@@ -95,7 +95,7 @@ const ExperienceSection: React.FC = () => {
                   <div className="mb-4">
                     <div className="flex items-start gap-4">
                       {exp.id === "usaa" && (
-                        <div className="w-24 h-24 rounded-full overflow-hidden flex items-center justify-center bg-white">
+                        <div className="w-24 h-24 md:w-12 md:h-12 rounded-full overflow-hidden flex items-center justify-center bg-white" style={{ minWidth: '96px', minHeight: '96px' }} >
                           <img 
                             src="/images/USAANoBG.jpg" 
                             alt="USAA Logo" 
@@ -115,7 +115,7 @@ const ExperienceSection: React.FC = () => {
   
                   <ul className="list-disc pl-5 mb-6">
                     {exp.description.map((item, index) => (
-                      <li key={index} className="mb-2 text-lg">
+                      <li key={index} className="mb-2 text-xl">
                         {item}
                       </li>
                     ))}
