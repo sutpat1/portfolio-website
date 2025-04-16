@@ -146,7 +146,7 @@ const AboutSection: React.FC = () => {
                         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                             <p className="text-base lg:text-lg">
                                 I am deeply passionate about full stack software engineering. This past summer of 2024,
-                                I completed a Software Engineering Internship at USAA where I expanded my work experience by building a payments technology 
+                                I completed a Software Engineering Internship at USAA where I expanded my work experience by contributing to a payments technology 
                                 web tool. I have experience working with Java, JavaScript, C++, Python, React.js, Next.js, Node.js, SQL, HTML, CSS, Springboot, and Git.
                                 I am also heavily interested in AI and ML, specifically with regards to LLMs with regard to how they can be used to build tools to enhance business
                                 and personal productivity. I enjoy working in collaborative environments where I can discuss and work with qualified professionals 

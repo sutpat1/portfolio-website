@@ -18,7 +18,7 @@ const EXPERIENCE_DATA: ExperienceItem[] = [
     company: "USAA",
     duration: "May 2024 - August 2024",
     description: [
-      "From May to August 2024, I worked as a Full Stack Software Engineering Intern in the Payments Technology Department at USAA. During my internship, I developed an enhanced internal customer service tool that enabled developers and other USAA employees to view and manage members' connected bank accounts. I improved the user interface using React.js and implemented backend REST API calls with Java and Spring Boot. Additionally, I built a search component to retrieve bank account details using member IDs and integrated CI/CD pipelines, OpenShift deployments, and automation tools to support a successful product launch. Outside of my core responsibilities, I also participated in the AWS Game Day Hackathon hosted at the company."
+      "From May to August 2024, I worked as a Full Stack Software Engineering Intern in the Payments Technology Department at USAA. During my internship, I contributed to enhancing an internal customer service tool that enabled developers and other USAA employees to view and manage members' connected bank accounts. I improved the user interface using React.js and implemented backend REST API calls with Java and Spring Boot. Additionally, I built a search component to retrieve bank account details using member IDs and integrated CI/CD pipelines, OpenShift deployments, and automation tools to support a successful product launch. Outside of my core responsibilities, I also participated in the AWS Game Day Hackathon hosted at the company."
     ],
     skills: ["Java", "React.js", "Spring Boot", "REST APIs", "Javascript", "Git", "CI/CD Pipelines"]
   },
