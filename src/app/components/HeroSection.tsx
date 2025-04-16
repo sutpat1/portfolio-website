@@ -40,22 +40,24 @@ const HeroSection = () => {
             {/* Optional: Add a short bio here */}
           </p>
 
-          <div className="mt-6">
+          <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
               href="/#contact"
-              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br  from-rose-700 via-purple-400 to-cyan-300 hover:bg-slate-200 text-white"
+              className="px-1 py-1 w-full sm:w-auto rounded-full bg-gradient-to-br from-rose-700 via-purple-400 to-cyan-300 hover:bg-slate-200 text-white"
             >
-              Hire Me
+              <span className="block rounded-full px-5 py-2 text-center">
+                Hire Me
+              </span>
             </Link>
             <button
               onClick={() => window.open("/documents/April2025CVSharvUtpat.pdf", "_blank")}
-              className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-cyan-300 via-purple-400 to-rose-700 hover:bg-slate-800 text-white mt-3"
+              className="px-1 py-1 w-full sm:w-auto rounded-full bg-gradient-to-br from-cyan-300 via-purple-400 to-rose-700 hover:bg-slate-800 text-white"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-center">
                 Download CV
               </span>
             </button>
-          </div>
+        </div>
         </motion.div>
 
         {/* Image with Blue Ring */}
