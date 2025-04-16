@@ -72,7 +72,7 @@ const EmailSection: React.FC = () => {
               <div className="mb-6">
                 <label
                   htmlFor="email"
-                  className="text-white block mb-2 text-sm font-medium"
+                  className="text-white block mb-2 text-sm font-bold"
                 >
                   Your email
                 </label>
@@ -88,7 +88,7 @@ const EmailSection: React.FC = () => {
               <div className="mb-6">
                 <label
                   htmlFor="subject"
-                  className="text-white block mb-2 text-sm font-medium"
+                  className="text-white block mb-2 text-sm font-bold"
                 >
                   Subject
                 </label>
@@ -104,7 +104,7 @@ const EmailSection: React.FC = () => {
               <div className="mb-6">
                 <label
                   htmlFor="message"
-                  className="text-white block text-sm mb-2 font-medium"
+                  className="text-white block text-sm mb-2 font-bold"
                 >
                   Message
                 </label>
@@ -118,7 +118,7 @@ const EmailSection: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="bg-pink-700 hover:bg-pink-600 font-medium py-2.5 px-5 rounded-lg w-full"
+                className="bg-pink-700 hover:bg-pink-500 font-bold py-2.5 px-5 rounded-lg w-full"
               >
                 Send Message
               </button>
