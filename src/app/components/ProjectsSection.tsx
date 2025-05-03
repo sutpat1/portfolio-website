@@ -25,6 +25,15 @@ const projectsData = [
   },
   {
     id: 3,
+    title: "LangChain OpenAI Application",
+    description: "This small project combines LangChain with OpenAI to create a question-answering system. Developers can integrate this code to utilize GPT models through a simple Python interface by installing dependencies, setting their API key, and adjusting temperature parameters. The lightweight implementation serves as a foundation for AI applications that can be extended with LangChain's additional components.",
+    image: "/images/PythonAI.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/sutpat1/langchain-openai-integration",
+    previewUrl: "https://github.com/sutpat1/langchain-openai-integration?tab=readme-ov-file#-getting-started",
+  },
+  {
+    id: 4,
     title: "Growin' Buds Application",
     description: "I collaborated with a team of four developers to design and implement the user interface for a social media application for gardening. Using JavaScript and React Native, we built a dynamic, cross-platform mobile app that ensured a responsive and intuitive user experience. My focus was on frontend development, UI/UX design, and ensuring seamless integration across devices. We also uploaded the app to Expo, enabling easy deployment, testing, and distribution for both iOS and Android platforms.",
     image: "/images/Plant.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "https://github.com/sutpat1/growin-buds?tab=readme-ov-file#-live-demo",
   },
   {
-    id: 4,
+    id: 5,
     title: "Connect 4 Application",
     description: "I collaborated with a team of three peers to develop a Connect Four game in MIPS assembly, deepening my knowledge of software and computer architecture. I gained experience with low-level instructions, memory management, and processor operations while implementing a UI/UX-focused graphical interface with bitmap graphics, optimizing software for graphics rendering within MIPS constraints.",
     image: "/images/Connect4.png",
@@ -41,6 +50,8 @@ const projectsData = [
     gitUrl: "https://github.com/sutpat1/Connect4Project",
     previewUrl: "https://github.com/sutpat1/connect-4-project/blob/main/README.md#-getting-started",
   },
+  
+  
 
 ]
 
