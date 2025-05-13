@@ -43,21 +43,34 @@ const TAB_DATA: TabData[] = [
         title: "Skills",
         id: "skills",
         content: (
-            <ul className="list-disc pl-5 font-bold">
-                
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>C++</li>
-                <li>Python</li>
-                <li>React.js</li>
-                <li>Next.js</li>
-                <li>SQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Spring Boot</li>
-                <li>Git</li>
-            </ul>
+            <div className="space-y-4">
+                <div>
+                    <h3 className="text-lg font-semibold mb-2">Language:</h3>
+                    <div className="flex flex-wrap gap-2">
+                    <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Python</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Java</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">JavaScript</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">TypeScript</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">C++</span>
+                        
+                        
+                    </div>
+                </div>
+                <div>
+                    <h3 className="text-lg font-semibold mb-2">Technologies:</h3>
+                    <div className="flex flex-wrap gap-2">
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">React.js</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Next.js</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Tailwind CSS</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">AWS Cloud</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Spring Boot</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Git</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Flask</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Docker</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Postman</span>
+                    </div>
+                </div>
+            </div>
         ),
     },
    
@@ -147,7 +160,7 @@ const AboutSection: React.FC = () => {
                             <p className="text-xl">
                                 I am deeply passionate about full stack software engineering. This past summer of 2024,
                                 I completed a Software Engineering Internship at USAA where I expanded my work experience by contributing to a payments technology 
-                                web tool. I have experience working with Java, JavaScript, C++, Python, React.js, Next.js, SQL, HTML, CSS, Springboot, and Git.
+                                web tool. I have experience working with Java, JavaScript, C++, Python, React.js, Next.js, TailwindCSS, and Git.
                                 I am also heavily interested in AI and ML, specifically with regards to LLMs with regard to how they can be used to build tools to enhance business
                                 and personal productivity. I enjoy working in collaborative environments where I can discuss and work with qualified professionals 
                                 to build important and relevant applications.

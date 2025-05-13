@@ -127,7 +127,7 @@ const ExperienceSection: React.FC = () => {
                       {exp.skills.map((skill, index) => (
                         <span
                           key={index}
-                          className="bg-blue-900 text-white px-3 py-1 rounded-full text-sm"
+                          className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold"
                         >
                           {skill}
                         </span>
