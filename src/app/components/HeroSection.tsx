@@ -50,7 +50,7 @@ const HeroSection = () => {
               </span>
             </Link>
             <button
-              onClick={() => window.open("/documents/April2025CVSharvUtpat.pdf", "_blank")}
+              onClick={() => window.open("/documents/July2025CVSharvUtpat.pdf", "_blank")}
               className="px-1 py-1 w-full sm:w-auto rounded-full bg-gradient-to-br from-cyan-300 via-purple-400 to-rose-700 hover:bg-slate-800 text-white"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-center">
