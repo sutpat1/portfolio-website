@@ -16,6 +16,15 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Serverless Inventory Management System",
+    description: "I built and deployed a scalable serverless inventory management app using AWS Lambda, DynamoDB, and API Gateway, supporting full CRUD operations via RESTful endpoints. The solution included a responsive Flask web UI with Bootstrap, a Python CLI tool for automation, and a REST API with proper HTTP status codes and error handling. Deployment was automated using AWS SAM templates, covering DynamoDB provisioning, Lambda configuration, and API Gateway setup with pay-per-request billing.",
+    image: "/images/MediumInventory.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/sutpat1/crud_application",
+    previewUrl: "/",
+  },
+  {
+    id: 3,
     title: "Fast Food AI Chatbot Application",
     description: "I led a 4-member team to develop a full-stack AI-powered fast food chatbot for In-N-Out using Flask and spaCy, managing project planning and team coordination via Jira and Confluence. We used a Kanban board to ensure timely feature delivery. I applied ML-based NLP techniques with spaCy to process customer inquiries, enabling understanding of menu items, prices, and orders. I also built a dynamic menu system from a CSV file and designed a user-friendly web interface for seamless front-end and back-end integration.",
     image: "/images/In-n-out.png",
@@ -24,7 +33,7 @@ const projectsData = [
     previewUrl: "https://innoutchatbox.onrender.com/",
   },
   {
-    id: 3,
+    id: 4,
     title: "LangChain OpenAI Application",
     description: "This small project combines LangChain with OpenAI to create a question-answering system. Developers can integrate this code to utilize GPT models through a simple Python interface by installing dependencies, setting their API key, and adjusting temperature parameters. The lightweight implementation serves as a foundation for AI applications that can be extended with LangChain's additional components.",
     image: "/images/PythonAI.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "https://github.com/sutpat1/langchain-openai-integration?tab=readme-ov-file#-getting-started",
   },
   {
-    id: 4,
+    id: 5,
     title: "Growin' Buds Application",
     description: "I collaborated with a team of four developers to design and implement the user interface for a social media application for gardening. Using JavaScript and React Native, we built a dynamic, cross-platform mobile app that ensured a responsive and intuitive user experience. My focus was on frontend development, UI/UX design, and ensuring seamless integration across devices. We also uploaded the app to Expo, enabling easy deployment, testing, and distribution for both iOS and Android platforms.",
     image: "/images/Plant.png",
@@ -42,7 +51,7 @@ const projectsData = [
     previewUrl: "https://github.com/sutpat1/growin-buds?tab=readme-ov-file#-live-demo",
   },
   {
-    id: 5,
+    id: 6,
     title: "Connect 4 Application",
     description: "I collaborated with a team of three peers to develop a Connect Four game in MIPS assembly, deepening my knowledge of software and computer architecture. I gained experience with low-level instructions, memory management, and processor operations while implementing a UI/UX-focused graphical interface with bitmap graphics, optimizing software for graphics rendering within MIPS constraints.",
     image: "/images/Connect4.png",
