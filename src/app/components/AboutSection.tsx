@@ -27,7 +27,7 @@ const TAB_DATA: TabData[] = [
       />
     </div>
     <div className="flex flex-col items-center md:items-start">
-      <h2 className="font-bold text-lg md:text-xl mb-1">B.S. in Computer Science, The University of Texas at Dallas</h2>
+      <h2 className="font-bold text-lg md:text-xl mb-1">B.S. in Computer Science - The University of Texas at Dallas</h2>
       <p className="text-gray-400 mb-3">August 2021 - May 2025</p>
       <ul className="list-disc pl-8 text-center md:text-left">
         <li className="font-bold "> CS^2 Computing Scholars Honors Program</li>
@@ -35,7 +35,30 @@ const TAB_DATA: TabData[] = [
       </ul>
     </div>
   </div>
+
+  <div className="flex flex-col md:flex-row items-center text-center md:text-left mt-8">
+          <div className="mb-4 md:mb-0 md:mr-4 flex justify-center">
+            <Image
+              src="/images/UTAustinLogo1.png" // add your image file
+              width={144}
+              height={144}
+              alt="UT Austin Logo"
+              className="rounded-full border-2 border-gray-300"
+            />
+          </div>
+          <div className="flex flex-col items-center md:items-start">
+            <h2 className="font-bold text-lg md:text-xl mb-1">
+            Post Graduate Program - The University of Texas at Austin
+            </h2>
+            <p className="text-gray-400 mb-3">January 2026 - August 2026</p>
+            <ul className="list-disc pl-8 text-center md:text-left">
+              <li className="font-bold"> Artificial Intelligence and Machine Learning: Business Applications</li>
+            </ul>
+          </div>
+        </div>
 </div>
+
+
             
         ),
     },
