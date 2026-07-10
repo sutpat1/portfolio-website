@@ -16,27 +16,28 @@ const TAB_DATA: TabData[] = [
         content: (
             
             <div className="w-full px-4 py-3">
-  <div className="flex flex-col md:flex-row items-center text-center md:text-left">
-    <div className="mb-4 md:mb-0 md:mr-4 flex justify-center">
-      <Image
-        src="/images/UTD-logo.png"
-        width={144}
-        height={144}
-        alt="UTD Logo"
-        className="rounded-full border-2 border-gray-300"
-      />
-    </div>
-    <div className="flex flex-col items-center md:items-start">
-      <h2 className="font-bold text-lg md:text-xl mb-1">B.S. in Computer Science - The University of Texas at Dallas</h2>
-      <p className="text-gray-400 mb-3">August 2021 - May 2025</p>
-      <ul className="list-disc pl-8 text-center md:text-left">
-        <li className="font-bold "> CS^2 Computing Scholars Honors Program</li>
-        <li className="font-bold">Collegium V Honors Program</li>
-      </ul>
-    </div>
-  </div>
 
-  <div className="flex flex-col md:flex-row items-center text-center md:text-left mt-8">
+<div className="flex flex-col md:flex-row items-center text-center md:text-left mt-8">
+  <div className="mb-4 md:mb-0 md:mr-4 flex justify-center">
+    <Image
+      src="/images/SCULogo.png"
+      width={144}
+      height={144}
+      alt="UTD Logo"
+      className="rounded-full border-2 border-gray-300"
+    />
+  </div>
+  <div className="flex flex-col items-center md:items-start">
+    <h2 className="font-bold text-lg md:text-xl mb-1">
+      Master of Science in Artifical Intelligence - Santa Clara University
+    </h2>
+    <p className="text-gray-400 mb-3">September 2026 - June 2028</p>
+    <ul className="list-disc pl-8 text-center md:text-left">
+    </ul>
+  </div>
+</div>
+
+<div className="flex flex-col md:flex-row items-center text-center md:text-left mt-8">
           <div className="mb-4 md:mb-0 md:mr-4 flex justify-center">
             <Image
               src="/images/UTAustinLogo1.png" // add your image file
@@ -56,6 +57,34 @@ const TAB_DATA: TabData[] = [
             </ul>
           </div>
         </div>
+
+
+        <div className="flex flex-col md:flex-row items-center text-center md:text-left mt-8">
+    <div className="mb-4 md:mb-0 md:mr-4 flex justify-center">
+      <Image
+        src="/images/UTD-logo.png"
+        width={144}
+        height={144}
+        alt="UTD Logo"
+        className="rounded-full border-2 border-gray-300"
+      />
+    </div>
+    <div className="flex flex-col items-center md:items-start">
+      <h2 className="font-bold text-lg md:text-xl mb-1">Bachelor of Science in Computer Science - The University of Texas at Dallas</h2>
+      <p className="text-gray-400 mb-3">August 2021 - May 2025</p>
+      <ul className="list-disc pl-8 text-center md:text-left">
+        <li className="font-bold "> CS^2 Computing Scholars Honors Program</li>
+        <li className="font-bold">Collegium V Honors Program</li>
+      </ul>
+    </div>
+  </div>
+
+  
+    
+        
+        
+
+
 </div>
 
 
@@ -68,7 +97,7 @@ const TAB_DATA: TabData[] = [
         content: (
             <div className="space-y-4">
                 <div>
-                    <h3 className="text-lg font-semibold mb-2">Language:</h3>
+                    <h3 className="text-lg font-semibold mb-2">Languages:</h3>
                     <div className="flex flex-wrap gap-2">
                     <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Python</span>
                         <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Java</span>
@@ -91,6 +120,22 @@ const TAB_DATA: TabData[] = [
                         <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Flask</span>
                         <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Docker</span>
                         <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Postman</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 className="text-lg font-semibold mb-2">Machine Learning:</h3>
+                    <div className="flex flex-wrap gap-2">
+                    <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Pandas</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">NumPy</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Matplotlib</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Seaborn</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Keras</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">TensorFlow</span>
+                        <span className="bg-blue-800 text-white px-3 py-1 rounded-full font-bold">Jupyter Notebook</span>
+                        
+
+                        
+                        
                     </div>
                 </div>
             </div>
